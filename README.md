@@ -23,6 +23,7 @@
   <li>Attributes with prefix "mlipski_cars_" are recognized as car brand attributes</li>
   <li>To add attribute you should go to backend and then <code>Stores > Attributes > Product</code></li>
   <li>Click on right top corner "Add new attribute"</li>
-  <li>Enter your "Default Label" (for example Volvo) and Attribute Code set to "mlipski_cars_YOUR-CAR" (for example "mlipski_cars_volvo")</li>
+  <li>Enter your "Default Label" (for example Volvo) and Attribute Code set to "mlipski_cars_YOUR-CAR" (for example "mlipski_cars_volvo"). Very important: type of this field should be set as "Dropdown"</li>
+  <li>Add some dropdown fields</li>
   <li>Clear Cache</li>
 </ul>
