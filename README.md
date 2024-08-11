@@ -19,5 +19,10 @@
 <br />
 <h2>How to use it?</h2>
 <ul>
-  <li>After install a new attribute should apper - "mlipski_cars_skoda". It is an example attribute which should also appear on frontend (homepage)</li>
+  <li>After install a new attribute should appear - "mlipski_cars_skoda". It is an example attribute which should also appear on frontend (homepage)</li>
+  <li>Attributes with prefix "mlipski_cars_" are recognized as car brand attributes</li>
+  <li>To add attribute you should go to backend and then <code>Stores > Attributes > Product</code></li>
+  <li>Click on right top corner "Add new attribute"</li>
+  <li>Enter your "Default Label" (for example Volvo) and Attribute Code set to "mlipski_cars_YOUR-CAR" (for example "mlipski_cars_volvo")</li>
+  <li>Clear Cache</li>
 </ul>
