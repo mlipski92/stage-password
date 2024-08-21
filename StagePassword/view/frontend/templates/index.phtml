@@ -1,0 +1,11 @@
+<div class="stagepassword">
+    <div class="stagepassword__inside">
+        <h2 class="stagepassword__title">Sign in:</h2>
+        <form action="<?php echo $block->getUrl('StagePassword/Index/Index'); ?>" method="post" class="stagepassword__form">
+            <input type="hidden" name="form_key" value="<?php echo $block->getFormKey(); ?>"/>
+            <input type="text" name="login" placeholder="Login" class="stagepassword__input">
+            <input type="password" name="password" placeholder="Password" class="stagepassword__input">
+            <input type="submit" value="Sign in" class="stagepassword__submit">
+        </form>
+    </div>
+</div>

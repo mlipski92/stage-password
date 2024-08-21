@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mlipski" translate="label" sortOrder="5">
+            <label>Mlipski</label>
+        </tab>
+        <section id="stage_password" sortOrder="20" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Stage Password</label>
+            <tab>mlipski</tab>
+            <resource>Magento_Backend::admin</resource>
+            <group id="stage_password_credencials" sortOrder="10" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Stage Password - credencials</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="login" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Login</label>
+                </field>
+                <field id="password" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Password</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

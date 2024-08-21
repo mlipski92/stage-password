@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Mlipski\StagePassword\Model\Session\Storage" type="Magento\Framework\Session\Storage">
+        <arguments>
+            <argument name="namespace" xsi:type="string">StagePassword</argument>
+        </arguments>
+    </virtualType>
+    <type name="Mlipski\StagePassword\Model\Session">
+        <arguments>
+            <argument name="storage" xsi:type="object">Mlipski\StagePassword\Model\Session\Storage</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\App\FrontControllerInterface">
+        <plugin name="Mlipski_StagePassword_Plugin" type="Mlipski\StagePassword\Plugin\RedirectionPlugin"/>
+    </type>
+</config>
